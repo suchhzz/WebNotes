@@ -1,0 +1,15 @@
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NoteDataAccess.deps.json
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NoteDataAccess.dll
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NoteDataAccess.pdb
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NotesEntities.dll
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NotesEntities.pdb
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.csproj.AssemblyReference.cache
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.AssemblyInfoInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.AssemblyInfo.cs
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteData.0FFA6E6C.Up2Date
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.dll
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\refint\NoteDataAccess.dll
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.pdb
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\ref\NoteDataAccess.dll

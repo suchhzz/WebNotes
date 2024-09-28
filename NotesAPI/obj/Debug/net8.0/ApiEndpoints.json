@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "Method": "GetNotes",
+    "RelativePath": "notes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "Method": "CreateNote",
+    "RelativePath": "notes/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "note",
+        "Type": "NotesEntities.Note",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

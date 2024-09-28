@@ -1,0 +1,11 @@
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\bin\Debug\net8.0\NotesEntities.deps.json
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\bin\Debug\net8.0\NotesEntities.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\bin\Debug\net8.0\NotesEntities.pdb
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.AssemblyInfoInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.AssemblyInfo.cs
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.csproj.CoreCompileInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\refint\NotesEntities.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\NotesEntities.pdb
+C:\Users\jenje\source\repos\NotesAPI\NotesEntities\obj\Debug\net8.0\ref\NotesEntities.dll

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NoteDataAccess/1.0.0": {
+        "dependencies": {
+          "NotesEntities": "1.0.0"
+        },
+        "runtime": {
+          "NoteDataAccess.dll": {}
+        }
+      },
+      "NotesEntities/1.0.0": {
+        "runtime": {
+          "NotesEntities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NoteDataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NotesEntities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
