@@ -18,9 +18,43 @@ namespace NoteDataAccess
             new Note { Id = Guid.NewGuid(), Title = "note 5", CreateDate = new DateTime(2024, 9, 3, 15, 6, 12), IsPinned = false },
         };
 
+        private readonly List<NoteList> _noteLists = new List<NoteList>
+        {
+            new NoteList { Id = Guid.NewGuid(), Title = "list 1", CreateDate = new DateTime(2023, 5, 2, 7, 54, 21), IsPinned = false,
+            Contents = new List<ListContent> {
+                new ListContent { Id = Guid.NewGuid(), IsChecked = false, Text = "content 1" },
+                new ListContent { Id = Guid.NewGuid(), IsChecked = false, Text = "content 2" },
+                new ListContent { Id = Guid.NewGuid(), IsChecked = true, Text = "content 3" },
+            }},
+
+            new NoteList { Id = Guid.NewGuid(), Title = "list 2", CreateDate = new DateTime(2021, 5, 6, 3, 1, 56), IsPinned = false,
+            Contents = new List<ListContent> {
+                new ListContent { Id = Guid.NewGuid(), IsChecked = true, Text = "content 1" },
+                new ListContent { Id = Guid.NewGuid(), IsChecked = true, Text = "content 2" }
+            }}
+        };
+
+        private readonly User _user;
+        public NoteContext()
+        {
+            _user = new User
+            {
+                Id = Guid.NewGuid(),
+                Username = "alex",
+                Password = "123",
+                Notes = _notes,
+                Lists = _noteLists
+            };
+        }
+
         public async Task<IQueryable<Note>> GetNotes()
         {
             return _notes.AsQueryable();
+        }
+
+        public async Task<IQueryable<NoteList>> GetLists()
+        {
+            return _noteLists.AsQueryable();
         }
 
         public async Task<Note> GetNoteById(Guid id)
@@ -28,6 +62,13 @@ namespace NoteDataAccess
             var note = _notes.FirstOrDefault(n => n.Id == id);
 
             return note;
+        }
+
+        public async Task<NoteList> GetListById(Guid id)
+        {
+            var noteList = _noteLists.FirstOrDefault(l => l.Id == id);
+
+            return noteList;
         }
 
         public async Task<Note> AddNote(Note note)
@@ -51,7 +92,6 @@ namespace NoteDataAccess
             var selectedNote = _notes.FirstOrDefault(n => n.Id == note.Id);
 
             selectedNote.Title = note.Title;
-            selectedNote.Contents = note.Contents;
             selectedNote.IsPinned = note.IsPinned;
 
             return selectedNote;
