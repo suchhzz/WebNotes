@@ -17,12 +17,12 @@
           <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
         </div>
         <div class="modal-body">
-            <form>
+            <form id="registerForm">
                 <div class="form-container d-flex">
-                    <input type="text" placeholder="Username">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                    <input type="submit" class="btn btn-outline-dark" value="Register"> 
+                    <input id="usernameInput" type="text" placeholder="Username">
+                    <input id="passwordInput" type="password" placeholder="Password">
+                    <input id="passwordConfirmInput" type="password" placeholder="Confirm Password">
+                    <input type="submit" id="registerBtn" class="btn btn-outline-dark" value="Register"> 
                 </div>
                 <hr>
                 <a href="">Log In</a>
@@ -34,6 +34,6 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/authorization-script.js"></script>
+    <script src="js/register-script.js"></script>
 </body>
 </html>

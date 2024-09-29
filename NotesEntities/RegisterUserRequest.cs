@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace NotesEntities
 {
-    public class User
+    public class RegisterUserRequest
     {
-        public Guid? Id { get; set; }
+        [Required]
         public string Username { get; set; }
+        [Required]
         public string Password { get; set; }
-        public List<Note> Notes { get; set; }
-        public List<NoteList> Lists { get; set; }
+        [Required]
+        public string PasswordConfirm { get; set; }
     }
 }
