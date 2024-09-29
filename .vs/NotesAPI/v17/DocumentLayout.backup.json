@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|solutionrelative:notesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}|NotesEntities\\NotesEntities.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesentities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}|NotesEntities\\NotesEntities.csproj|solutionrelative:notesentities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesapi\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|solutionrelative:notesapi\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesapi\\abstractions\\inotesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|solutionrelative:notesapi\\abstractions\\inotesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827D26C4-13CB-406F-B501-BA61449C3318}|NotesAPI\\NotesAPI.csproj|solutionrelative:notesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}|NotesEntities\\NotesEntities.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notesentities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}|NotesEntities\\NotesEntities.csproj|solutionrelative:notesentities\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E525B743-79C7-46C0-9F64-931854B0F881}|NoteDataAccess\\NoteDataAccess.csproj|c:\\users\\jenje\\source\\repos\\notesapi\\notedataaccess\\notecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,13 +66,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "INotesService.cs",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Abstractions\\INotesService.cs",
               "RelativeDocumentMoniker": "NotesAPI\\Abstractions\\INotesService.cs",
               "ToolTip": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Abstractions\\INotesService.cs",
               "RelativeToolTip": "NotesAPI\\Abstractions\\INotesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T09:31:09.276Z",
               "EditorCaption": ""
@@ -87,18 +87,17 @@
               "RelativeToolTip": "NoteDataAccess\\INoteContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T09:28:54.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T09:28:54.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "NotesService.cs",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Services\\NotesService.cs",
               "RelativeDocumentMoniker": "NotesAPI\\Services\\NotesService.cs",
               "ToolTip": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Services\\NotesService.cs",
               "RelativeToolTip": "NotesAPI\\Services\\NotesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T08:39:30.808Z",
               "EditorCaption": ""
@@ -106,15 +105,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "NoteDataAccess",
+              "Title": "NoteDataAccess.csproj",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NoteDataAccess\\NoteDataAccess.csproj",
               "RelativeDocumentMoniker": "NoteDataAccess\\NoteDataAccess.csproj",
               "ToolTip": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NoteDataAccess\\NoteDataAccess.csproj",
               "RelativeToolTip": "NoteDataAccess\\NoteDataAccess.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-28T08:35:11.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T08:35:11.477Z"
             },
             {
               "$type": "Document",
@@ -126,12 +124,11 @@
               "RelativeToolTip": "NoteDataAccess\\NoteContext.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwCQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T08:35:19.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T08:35:19.094Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Program.cs",
               "RelativeDocumentMoniker": "NotesAPI\\Program.cs",
@@ -152,12 +149,11 @@
               "RelativeToolTip": "NotesEntities\\NoteContent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T08:31:35.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T08:31:35.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Note.cs",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesEntities\\Note.cs",
               "RelativeDocumentMoniker": "NotesEntities\\Note.cs",
@@ -165,18 +161,17 @@
               "RelativeToolTip": "NotesEntities\\Note.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T08:29:52.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T08:29:52.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "NotesController.cs",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Controllers\\NotesController.cs",
               "RelativeDocumentMoniker": "NotesAPI\\Controllers\\NotesController.cs",
               "ToolTip": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\Controllers\\NotesController.cs",
               "RelativeToolTip": "NotesAPI\\Controllers\\NotesController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAwwBkAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T08:26:51.01Z",
               "EditorCaption": ""
@@ -184,15 +179,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "NotesAPI",
+              "Title": "NotesAPI.csproj",
               "DocumentMoniker": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
               "RelativeDocumentMoniker": "NotesAPI\\NotesAPI.csproj",
               "ToolTip": "C:\\Users\\jenje\\source\\repos\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
               "RelativeToolTip": "NotesAPI\\NotesAPI.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-28T08:39:23.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T08:39:23.809Z"
             }
           ]
         }
