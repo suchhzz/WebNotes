@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Web Notes</title>
+</head>
+<body>
+    <header class="container">
+        <div class="row text-center">
+            <div class="col-6">
+                <p>content</p>
+            </div>
+            <div class="col-6">
+                <p>content</p>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="create-note row">
+            <button class="col-3 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#noteModal">Create Note</button>
+            <button class="col-3 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#listModal">Create List</button>
+        </div>
+
+
+  <div class="modal fade" id="noteModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="container">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New note</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="row">
+                    <input class="modal-input-title" placeholder="Title" type="text">
+                    <hr>
+                    <textarea placeholder="Description" rows="5"></textarea>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <input type="submit" class="btn btn-primary"  value="Save changes">
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="listModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">New list</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="container" id="listForm">
+                <div id="listItem" class="row list-container">
+                    <input class="modal-input-title" placeholder="Title" type="text">
+                    <hr>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <div class="add-list-button">
+                <button id="newListItemBtn" class="col-3 btn btn-outline-dark">+</button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="cardContainer" class="card-section container d-flex row">
+
+    <div class="card col-3" style="width: 18rem;">
+        <div class="card-body">
+            <div class="card-title-container d-flex" onclick="openModal()">
+                <h5 class="card-title">Card titlgfdsgfdsg dfsg fds gdfs gdsf gds e</h5>
+                <button class="trash-icon-button bi bi-trash-fill btn"></button>
+            </div>
+          <hr>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.gfdsgagafsdgfgdsafdsafasdfsdsdfasdfafsdsdfaafd</p>
+        </div>
+    </div>
+
+
+
+
+    <div class="card col-3" style="width: 18rem;">
+        <div class="card-body">
+            <div class="card-title-container d-flex">
+                <h5 class="card-title">Card title</h5>
+                <button class="trash-icon-button bi bi-trash-fill btn"></button>
+            </div>
+          <hr>
+          <div class="card-text-checkbox d-flex">
+            <div class="list-item d-flex">
+                <input type="checkbox">
+                <p class="card-text">dfsfasdfsdafffffffffffff ffffffffffffffff ffffffffff ffffffffffffffffffffffffff</p>
+            </div>
+            <div class="list-item d-flex">
+                <input type="checkbox">
+                <p class="card-text">dfsfasdfsdafffffffffffff ffffffffffffffff ffffffffff ffffffffffffffffffffffffff</p>
+            </div>
+            <div class="list-item d-flex">
+                <input type="checkbox">
+                <p class="card-text">dfsfasdfsdafffffffffffff ffffffffffffffff ffffffffff ffffffffffffffffffffffffff</p>
+            </div>
+        </div>
+        </div>
+    </div>  
+    </div>
+
+  <button class="btn btn-outline-dark add-note" onclick="addNoteCard(123, 123)">add note card</button>
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
