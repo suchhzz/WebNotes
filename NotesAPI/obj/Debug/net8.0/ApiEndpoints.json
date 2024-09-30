@@ -16,7 +16,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "GetNotes",
     "RelativePath": "notes",
     "HttpMethod": "GET",
@@ -26,7 +26,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "GetNoteById",
     "RelativePath": "notes/{id}",
     "HttpMethod": "GET",
@@ -42,7 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "CreateNote",
     "RelativePath": "notes/create",
     "HttpMethod": "POST",
@@ -58,7 +58,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "DeleteNote",
     "RelativePath": "notes/delete/{id}",
     "HttpMethod": "DELETE",
@@ -74,7 +74,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "UpdateNote",
     "RelativePath": "notes/update/{id}",
     "HttpMethod": "PUT",

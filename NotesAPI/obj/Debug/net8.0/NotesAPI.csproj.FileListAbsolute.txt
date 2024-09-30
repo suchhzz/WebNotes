@@ -35,3 +35,16 @@ C:\Users\jenje\source\repos\NotesAPI\NotesAPI\obj\Debug\net8.0\NotesAPI.pdb
 C:\Users\jenje\source\repos\NotesAPI\NotesAPI\obj\Debug\net8.0\NotesAPI.genruntimeconfig.cache
 C:\Users\jenje\source\repos\NotesAPI\NotesAPI\obj\Debug\net8.0\ref\NotesAPI.dll
 C:\Users\jenje\source\repos\NotesAPI\NotesAPI\obj\Debug\net8.0\NotesAPI.sourcelink.json
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\TokenOperations.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\TokenOperations.pdb
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jenje\source\repos\NotesAPI\NotesAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

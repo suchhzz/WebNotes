@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesAPI", "NotesAPI\NotesAPI.csproj", "{827D26C4-13CB-406F-B501-BA61449C3318}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesAPI", "NotesAPI\NotesAPI.csproj", "{827D26C4-13CB-406F-B501-BA61449C3318}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesEntities", "NotesEntities\NotesEntities.csproj", "{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotesEntities", "NotesEntities\NotesEntities.csproj", "{C41C3724-C376-4B4F-BFD2-0FADCBCF880A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteDataAccess", "NoteDataAccess\NoteDataAccess.csproj", "{E525B743-79C7-46C0-9F64-931854B0F881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteDataAccess", "NoteDataAccess\NoteDataAccess.csproj", "{E525B743-79C7-46C0-9F64-931854B0F881}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenOperations", "TokenOperations\TokenOperations.csproj", "{9191BEAE-A0D5-480F-9B2B-9068EFDC874B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C41C3724-C376-4B4F-BFD2-0FADCBCF880A} = {C41C3724-C376-4B4F-BFD2-0FADCBCF880A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +32,10 @@ Global
 		{E525B743-79C7-46C0-9F64-931854B0F881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E525B743-79C7-46C0-9F64-931854B0F881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E525B743-79C7-46C0-9F64-931854B0F881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9191BEAE-A0D5-480F-9B2B-9068EFDC874B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9191BEAE-A0D5-480F-9B2B-9068EFDC874B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9191BEAE-A0D5-480F-9B2B-9068EFDC874B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9191BEAE-A0D5-480F-9B2B-9068EFDC874B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

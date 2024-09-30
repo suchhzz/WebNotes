@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NotesAPI.Abstractions;
 using NotesEntities;
 
 namespace NotesAPI.Controllers
@@ -9,41 +10,49 @@ namespace NotesAPI.Controllers
     {
         private readonly ILogger<UserController> _logger;
         private readonly List<User> _users;
-        public UserController(ILogger<UserController> logger)
+        private readonly IUserService _userService;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public UserController(ILogger<UserController> logger, IUserService userService, IHttpContextAccessor httpContextAccessor)
         {
             _logger = logger;
+            _userService = userService;
+            _httpContextAccessor = httpContextAccessor;
             _users = new List<User>();
         }
 
         [HttpPost("/register")]
         public async Task<IActionResult> Register([FromBody] RegisterUserRequest request)
         {
-            var user = new User
+            if (!ModelState.IsValid || string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
             {
-                Id = Guid.NewGuid(),
-                Username = request.Username,
-                Password = request.Password,
-                Notes = new List<Note>()
-            };
+                return BadRequest("Invalid input");
+            }
 
-            _users.Add(user);
+            if (request.Password != request.PasswordConfirm)
+            {
+                return Unauthorized("Incorrect passwords");
+            }
 
-            _logger.LogInformation("registered new user, id: " + user.Id);
+            var existingUser = _users.FirstOrDefault(u => u.Username == request.Username);
 
-            return Ok(user);
+            if (existingUser != null)
+            {
+                return Unauthorized();
+            }
+
+            await _userService.Register(request.Username, request.Password);
+            
+            return Ok("registered");
         }
 
         [HttpPost("/login")]
         public async Task<IActionResult> Login([FromBody] LoginUserRequest request)
         {
-            var user = _users.FirstOrDefault(u => u.Username == request.Username);
+            var token = await _userService.Login(request.Username, request.Password);
 
-            if (user.Password != request.Password)
-            {
-                return Unauthorized("user was not found");
-            }
+            _httpContextAccessor.HttpContext.Response.Cookies.Append("jwt", token);
 
-            return Ok(user);
+            return Ok(token);
         }
     }
 }

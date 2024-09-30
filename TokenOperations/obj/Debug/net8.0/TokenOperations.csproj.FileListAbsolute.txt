@@ -1,0 +1,16 @@
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\bin\Debug\net8.0\TokenOperations.deps.json
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\bin\Debug\net8.0\TokenOperations.dll
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\bin\Debug\net8.0\TokenOperations.pdb
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\bin\Debug\net8.0\NotesEntities.dll
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\bin\Debug\net8.0\NotesEntities.pdb
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.csproj.AssemblyReference.cache
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.AssemblyInfoInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.AssemblyInfo.cs
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.csproj.CoreCompileInputs.cache
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.sourcelink.json
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOpe.FE95240D.Up2Date
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.dll
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\refint\TokenOperations.dll
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\TokenOperations.pdb
+C:\Users\jenje\source\repos\NotesAPI\TokenOperations\obj\Debug\net8.0\ref\TokenOperations.dll

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NotesAPI.Services;
 using NotesEntities;
 
@@ -7,16 +8,17 @@ namespace NotesAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class NotesController : ControllerBase
+    public class NoteController : ControllerBase
     {
-        private readonly ILogger<NotesController> _logger;
+        private readonly ILogger<NoteController> _logger;
         private readonly INotesService _notesService;
-        public NotesController(INotesService notesService, ILogger<NotesController> logger)
+        public NoteController(INotesService notesService, ILogger<NoteController> logger)
         {
             _logger = logger;
             _notesService = notesService;
         }
 
+        [Authorize]
         [HttpGet("/notes")]
         public async Task<IActionResult> GetNotes()
         {

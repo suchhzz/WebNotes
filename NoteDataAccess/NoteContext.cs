@@ -34,17 +34,19 @@ namespace NoteDataAccess
             }}
         };
 
-        private readonly User _user;
+        private readonly List<User> _users;
         public NoteContext()
         {
-            _user = new User
+            _users = new List<User>();
+
+            _users.Add(new User
             {
                 Id = Guid.NewGuid(),
                 Username = "alex",
-                Password = "123",
+                HashedPassword = "123",
                 Notes = _notes,
                 Lists = _noteLists
-            };
+            });
         }
 
         public async Task<IQueryable<Note>> GetNotes()
@@ -95,6 +97,20 @@ namespace NoteDataAccess
             selectedNote.IsPinned = note.IsPinned;
 
             return selectedNote;
+        }
+
+        public async Task<User> AddUser(User user)
+        {
+            _users.Add(user);
+
+            return user;
+        }
+
+        public async Task<User> GetUserByUsername(string username)
+        {
+            var user = _users.FirstOrDefault(u => u.Username == username);
+
+            return user;
         }
     }
 }

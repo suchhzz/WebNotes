@@ -7,12 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\NoteDataAccess\NoteDataAccess.csproj" />
     <ProjectReference Include="..\NotesEntities\NotesEntities.csproj" />
+    <ProjectReference Include="..\TokenOperations\TokenOperations.csproj" />
   </ItemGroup>
 
 </Project>

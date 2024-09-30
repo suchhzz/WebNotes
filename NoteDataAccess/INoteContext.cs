@@ -9,5 +9,7 @@ namespace NoteDataAccess
         Task<Note> GetNoteById(Guid id);
         Task<IQueryable<Note>> GetNotes();
         Task<Note> UpdateNote(Note note);
+        Task<User> AddUser(User user);
+        Task<User> GetUserByUsername(string username);
     }
 }
