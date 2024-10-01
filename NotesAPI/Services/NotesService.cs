@@ -17,19 +17,61 @@ namespace NotesAPI.Services
             return await _noteContext.GetNotes();
         }
 
+        public async Task<IQueryable<NoteList>> GetLists()
+        {
+            return await _noteContext.GetLists();
+        }
+
         public async Task<Note> GetNoteById(Guid id)
         {
             return await _noteContext.GetNoteById(id);
         }
 
-        public async Task<Note> CreateNote(Note note)
+        public async Task<Note> CreateNote(CreateNote note)
         {
-            var createdNote = await _noteContext.AddNote(note);
+            var newNote = new Note
+            {
+                Id = Guid.NewGuid(),
+                Title = note.Title,
+                Description = note.Description,
+                CreateDate = DateTime.Now,
+                UpdateDate = DateTime.Now,
+                IsPinned = false
+            };
+
+            var createdNote = await _noteContext.AddNote(newNote);
 
             return createdNote;
         }
 
-        public async Task<Note> UpdateNote(Note note)
+        public async Task<NoteList> CreateList(CreateList list)
+        {
+            var newList = new NoteList
+            {
+                Id = Guid.NewGuid(),
+                Title = list.Title,
+                Contents = new List<ListContent>(),
+                CreateDate = DateTime.Now,
+                UpdateDate = DateTime.Now,
+                IsPinned = false
+            };
+
+            foreach (var item in list.Contents)
+            {
+                newList.Contents.Add(
+                    new ListContent
+                    {
+                        Id= Guid.NewGuid(),
+                        Text = item.Text,
+                        IsChecked = item.IsChecked,
+                    });
+            }
+
+            var createdList = await _noteContext.AddNote(newList);
+
+            return createdList;
+        }
+    public async Task<Note> UpdateNote(Note note)
         {
             var updatedNote = await _noteContext.UpdateNote(note);
 
@@ -41,6 +83,13 @@ namespace NotesAPI.Services
             var deletedNote = await _noteContext.DeleteNoteById(id);
 
             return deletedNote;
+        }
+
+        public async Task<NoteList> DeleteList(Guid id)
+        {
+            var deletedList = await _noteContext.DeleteListById(id);
+
+            return deletedList;
         }
     }
 }

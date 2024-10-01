@@ -9,7 +9,7 @@ namespace NotesEntities
 {
     public class ListContent
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string Text { get; set; }
         public bool IsChecked { get; set; } = false;
     }

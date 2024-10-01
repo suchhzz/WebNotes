@@ -18,13 +18,20 @@ namespace NotesAPI.Controllers
             _notesService = notesService;
         }
 
-        [Authorize]
         [HttpGet("/notes")]
         public async Task<IActionResult> GetNotes()
         {
             var notes = await _notesService.GetNotes();
 
             return Ok(notes);
+        }
+
+        [HttpGet("/lists")]
+        public async Task<IActionResult> GetLists()
+        {
+            var lists = await _notesService.GetLists();
+
+            return Ok(lists);
         }
 
         [HttpGet("/notes/{id}")]
@@ -41,11 +48,19 @@ namespace NotesAPI.Controllers
         }
 
         [HttpPost("/notes/create")]
-        public async Task<IActionResult> CreateNote([FromBody] Note note)
+        public async Task<IActionResult> CreateNote([FromBody] CreateNote note)
         {
             var createdNote = await _notesService.CreateNote(note);
 
             return Ok(createdNote);
+        }
+
+        [HttpPost("/lists/create")]
+        public async Task<IActionResult> CreateList([FromBody] CreateList list)
+        {
+            var createdList = await _notesService.CreateList(list);
+
+            return Ok(createdList);
         }
 
         [HttpPut("/notes/update/{id}")]
@@ -68,6 +83,14 @@ namespace NotesAPI.Controllers
             var deletedNote = await _notesService.DeleteNote(id);
 
             return Ok(deletedNote);
+        }
+
+        [HttpDelete("/lists/delete/{id}")]
+        public async Task<IActionResult> DeleteList(Guid id)
+        {
+            var deletedList = await _notesService.DeleteList(id);
+
+            return Ok(deletedList);
         }
     }
 }

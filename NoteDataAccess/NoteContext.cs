@@ -11,11 +11,35 @@ namespace NoteDataAccess
     {
         private readonly List<Note> _notes = new List<Note>
         {
-            new Note { Id = Guid.NewGuid(), Title = "note 1", CreateDate = new DateTime(2024, 9, 25, 12, 30, 43), IsPinned = false },
-            new Note { Id = Guid.NewGuid(), Title = "note 2", CreateDate = DateTime.Now, IsPinned = false },
-            new Note { Id = Guid.NewGuid(), Title = "note 3", CreateDate = new DateTime(2024, 9, 21, 3, 3, 54), IsPinned = true },
-            new Note { Id = Guid.NewGuid(), Title = "note 4", CreateDate = new DateTime(2024, 9, 7, 8, 10, 23), IsPinned = true },
-            new Note { Id = Guid.NewGuid(), Title = "note 5", CreateDate = new DateTime(2024, 9, 3, 15, 6, 12), IsPinned = false },
+            new Note { Id = Guid.NewGuid(), 
+                Title = "note 1", 
+                Description = "some desc1",
+                CreateDate = new DateTime(2024, 9, 25, 12, 30, 43), 
+                IsPinned = false },
+
+            new Note { Id = Guid.NewGuid(), 
+                Title = "note 2", 
+                Description = "some loooooooo oooooo ooooo ooo ooo oooooo oooooooooo oooo oooo oong description",
+                CreateDate = DateTime.Now, 
+                IsPinned = false },
+
+            new Note { Id = Guid.NewGuid(), 
+                Title = "note 3",
+                Description = "some desc3",
+                CreateDate = new DateTime(2024, 9, 21, 3, 3, 54), 
+                IsPinned = true },
+
+            new Note { Id = Guid.NewGuid(), 
+                Title = "note 4",
+                Description = "some loooo oo o o o o oo o  o o o o o o ongggg desc 2",
+                CreateDate = new DateTime(2024, 9, 7, 8, 10, 23), 
+                IsPinned = true },
+
+            new Note { Id = Guid.NewGuid(), 
+                Title = "note 5",
+                Description = "some dedsadas dsasc2",
+                CreateDate = new DateTime(2024, 9, 3, 15, 6, 12), 
+                IsPinned = false },
         };
 
         private readonly List<NoteList> _noteLists = new List<NoteList>
@@ -80,13 +104,29 @@ namespace NoteDataAccess
             return note;
         }
 
-        public async Task<Note> DeleteNoteById(Guid id)
+        public async Task<NoteList> AddList(NoteList list)
+        {
+            _noteLists.Add(list);
+
+            return list;
+        }
+
+    public async Task<Note> DeleteNoteById(Guid id)
         {
             var selectedNote = _notes.FirstOrDefault(n => n.Id == id);
 
             _notes.Remove(selectedNote);
 
             return selectedNote;
+        }
+
+        public async Task<NoteList> DeleteListById(Guid id)
+        {
+            var selectedList = _noteLists.FirstOrDefault(l => l.Id == id);
+
+            _noteLists.Remove(selectedList);
+
+            return selectedList;
         }
 
         public async Task<Note> UpdateNote(Note note)
