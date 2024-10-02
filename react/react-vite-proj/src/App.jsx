@@ -1,28 +1,39 @@
-import ListModal from "./components/modals/ListModal"
-import NoteModal from "./components/modals/NoteModal"
-import Header from "./components/Header"
-import CardContainer from "./components/cards/CardContainer"
+import MainComponent from "./components/MainComponent"
+import LoginComponent from "./components/LoginComponent";
+import { getUser } from "./services/userService";
+import { useEffect, useState } from "react"
 
 export default function App() {
-  return (
-    <>
-    <Header />
 
-    <section className="container">
-        <div className="create-note row">
-            <button className="col-3 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#noteModal">Create Note</button>
-            <button className="col-3 btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#listModal">Create List</button>
-        </div>
+  const [user, setUser] = useState(null);
 
-  <NoteModal />
-  <ListModal />
+  useEffect(() => {
+    const checkAuth = async() => {
+      const fetchedUser = await getUser();
+      setUser(fetchedUser);
+    }
 
-  <CardContainer />
+    checkAuth();
+  }, []);
 
-  <button class="btn btn-outline-dark add-note" onclick="addNoteCard(123, 123)">add note card</button>
+  if (user) {
 
-    </section>
-    </>
-  )
+
+    console.log("returning main");
+
+    return (
+      <MainComponent />
+
+    )} else {
+
+      console.log("returning login");
+      
+      return (
+
+        
+
+        <LoginComponent onRegister={(newUser) => setUser(newUser)}/>
+      )
+    }
 }
 

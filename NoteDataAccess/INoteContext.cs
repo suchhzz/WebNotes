@@ -14,5 +14,7 @@ namespace NoteDataAccess
         Task<Note> UpdateNote(Note note);
         Task<User> AddUser(User user);
         Task<User> GetUserByUsername(string username);
+        Task<User> GetUserById(Guid id);
+        Task<ListContent> CheckList(Guid id, string text);
     }
 }

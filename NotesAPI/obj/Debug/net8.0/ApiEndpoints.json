@@ -11,6 +11,38 @@
   },
   {
     "ContainingType": "NotesAPI.Controllers.NoteController",
+    "Method": "CheckListItem",
+    "RelativePath": "lists/check",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NotesEntities.CheckListRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "Method": "CreateList",
+    "RelativePath": "lists/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "list",
+        "Type": "NotesEntities.CreateList",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.NoteController",
     "Method": "DeleteList",
     "RelativePath": "lists/delete/{id}",
     "HttpMethod": "DELETE",
@@ -134,6 +166,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

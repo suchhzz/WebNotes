@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace NotesEntities
 {
-    public class CreateList
+    public class CreateListContent
     {
-        public string Title { get; set; }
-        public List<CreateListContent> Contents { get; set; }
+        public string Text { get; set; }
     }
 }

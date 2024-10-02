@@ -61,16 +61,24 @@ namespace NotesAPI.Services
                 newList.Contents.Add(
                     new ListContent
                     {
-                        Id= Guid.NewGuid(),
+                        Id = Guid.NewGuid(),
                         Text = item.Text,
-                        IsChecked = item.IsChecked,
+                        IsChecked = false,
                     });
             }
 
-            var createdList = await _noteContext.AddNote(newList);
+            var createdList = await _noteContext.AddList(newList);
 
             return createdList;
         }
+
+    public async Task<ListContent> CheckListItem(CheckListRequest request)
+    {
+            var listContent = await _noteContext.CheckList(request.Id, request.Text);
+
+            return listContent;
+    }
+
     public async Task<Note> UpdateNote(Note note)
         {
             var updatedNote = await _noteContext.UpdateNote(note);

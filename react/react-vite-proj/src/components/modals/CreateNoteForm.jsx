@@ -1,4 +1,4 @@
-import { createNote } from "../../services/noteOperations";
+import { createNote } from "../../services/noteService";
 import { useState } from "react";
 
 export default function CreateNoteForm() {

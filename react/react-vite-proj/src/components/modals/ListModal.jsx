@@ -3,11 +3,9 @@ import { useState } from "react";
 
 export default function ListModal() {
 
-    const [listItems, setListItems] = useState([{ title: '' }]);
+    const [listItems, setListItems] = useState([{ text: '' }]);
 
-    const handleAddListItem = () => {
-        setListItems([...listItems, { title: '' }]);
-    };
+    
 
     const handleRemoveListItem = (index) => {
         setListItems(listItems.filter((_, i) => i !== index));
@@ -15,7 +13,7 @@ export default function ListModal() {
 
     const handleInputChange = (index, event) => {
         const newListItems = [...listItems];
-        newListItems[index].title = event.target.value;
+        newListItems[index].text = event.target.value;
         setListItems(newListItems);
     };
 
@@ -30,18 +28,10 @@ export default function ListModal() {
                     <div className="modal-body">
                         <CreateListForm 
                             listItems = {listItems}
+                            setListItems={setListItems}
                             handleInputChange={handleInputChange}
                             handleRemoveListItem={handleRemoveListItem}
                             />
-                    </div>
-                    <div className="modal-footer">
-                        <div className="add-list-button">
-                            <button id="newListItemBtn" className="col-3 btn btn-outline-dark" onClick={handleAddListItem}>+</button>
-                        </div>
-                        <div>
-                            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,7 +73,15 @@ namespace NoteDataAccess
                 Lists = _noteLists
             });
         }
+        public async Task<ListContent> CheckList(Guid id, string text)
+        {
+            var content = _noteLists.SelectMany(c => c.Contents)
+                .FirstOrDefault(c => c.Id == id && c.Text == text);
 
+            content.IsChecked = !content.IsChecked;
+
+            return content;
+        }
         public async Task<IQueryable<Note>> GetNotes()
         {
             return _notes.AsQueryable();
@@ -149,6 +158,13 @@ namespace NoteDataAccess
         public async Task<User> GetUserByUsername(string username)
         {
             var user = _users.FirstOrDefault(u => u.Username == username);
+
+            return user;
+        }
+
+        public async Task<User> GetUserById(Guid id)
+        {
+            var user = _users.FirstOrDefault(u => u.Id == id);
 
             return user;
         }

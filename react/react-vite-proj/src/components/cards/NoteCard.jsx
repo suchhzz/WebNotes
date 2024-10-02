@@ -1,4 +1,4 @@
-import { deleteNote } from "../../services/noteOperations"
+import { deleteNote } from "../../services/noteService"
 
 export default function NoteCard({ id, title, description }) {
 

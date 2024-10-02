@@ -50,9 +50,10 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.AllowAnyOrigin();
-        policy.AllowAnyHeader();
+        policy.WithOrigins("http://localhost:5173");
         policy.AllowAnyMethod();
+        policy.AllowAnyHeader();
+        policy.AllowCredentials();
     });
 });
 
@@ -73,10 +74,10 @@ app.UseCookiePolicy(new CookiePolicyOptions
     Secure = CookieSecurePolicy.Always
 });
 
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.UseCors();
 
 app.MapControllers();
 

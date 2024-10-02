@@ -2,7 +2,7 @@ import ListCard from "./ListCard";
 import NoteCard from "./NoteCard";
 import { useEffect, useState } from "react";
 import { getLists, getNotes } from "../../services/notes";
-import { deleteNote } from "../../services/noteOperations";
+import { deleteNote } from "../../services/noteService";
 
 export default function CardContainer() {
     const [noteData, setNoteData] = useState([]);
@@ -39,7 +39,6 @@ export default function CardContainer() {
 
             {listData.map((item) => (
                 <ListCard
-                    key={item.id} // Используйте уникальный id вместо index
                     id={item.id}
                     title={item.title}
                     contents={item.contents}

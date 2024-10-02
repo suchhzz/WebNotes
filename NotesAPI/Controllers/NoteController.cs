@@ -18,6 +18,7 @@ namespace NotesAPI.Controllers
             _notesService = notesService;
         }
 
+        [Authorize]
         [HttpGet("/notes")]
         public async Task<IActionResult> GetNotes()
         {
@@ -61,6 +62,14 @@ namespace NotesAPI.Controllers
             var createdList = await _notesService.CreateList(list);
 
             return Ok(createdList);
+        }
+
+        [HttpPut("/lists/check")]
+        public async Task<IActionResult> CheckListItem([FromBody] CheckListRequest request)
+        {
+            var checkedList = await _notesService.CheckListItem(request);
+
+            return Ok(checkedList);
         }
 
         [HttpPut("/notes/update/{id}")]
