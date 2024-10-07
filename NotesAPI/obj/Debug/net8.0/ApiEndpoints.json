@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "GetLists",
     "RelativePath": "lists",
     "HttpMethod": "GET",
@@ -10,7 +10,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "CheckListItem",
     "RelativePath": "lists/check",
     "HttpMethod": "PUT",
@@ -19,14 +19,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "NotesEntities.CheckListRequest",
+        "Type": "NotesEntities.Operations.CheckListRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "CreateList",
     "RelativePath": "lists/create",
     "HttpMethod": "POST",
@@ -35,14 +35,14 @@
     "Parameters": [
       {
         "Name": "list",
-        "Type": "NotesEntities.CreateList",
+        "Type": "NotesEntities.Operations.CreateListRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "DeleteList",
     "RelativePath": "lists/delete/{id}",
     "HttpMethod": "DELETE",
@@ -58,39 +58,18 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.UserController",
-    "Method": "Login",
-    "RelativePath": "login",
-    "HttpMethod": "POST",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "Method": "UpdateList",
+    "RelativePath": "lists/update/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "NotesEntities.LoginUserRequest",
+        "Name": "list",
+        "Type": "NotesEntities.NoteList",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
-    "Method": "GetNotes",
-    "RelativePath": "notes",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
-    "Method": "GetNoteById",
-    "RelativePath": "notes/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+      },
       {
         "Name": "id",
         "Type": "System.Guid",
@@ -100,7 +79,33 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.UsersController",
+    "Method": "Login",
+    "RelativePath": "login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NotesEntities.Authorization.LoginUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.NotesController",
+    "Method": "GetNotes",
+    "RelativePath": "notes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "CreateNote",
     "RelativePath": "notes/create",
     "HttpMethod": "POST",
@@ -109,14 +114,14 @@
     "Parameters": [
       {
         "Name": "note",
-        "Type": "NotesEntities.CreateNote",
+        "Type": "NotesEntities.Operations.CreateNoteRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "DeleteNote",
     "RelativePath": "notes/delete/{id}",
     "HttpMethod": "DELETE",
@@ -132,7 +137,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.NoteController",
+    "ContainingType": "NotesAPI.Controllers.NotesController",
     "Method": "UpdateNote",
     "RelativePath": "notes/update/{id}",
     "HttpMethod": "PUT",
@@ -153,7 +158,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.UserController",
+    "ContainingType": "NotesAPI.Controllers.UsersController",
     "Method": "Register",
     "RelativePath": "register",
     "HttpMethod": "POST",
@@ -162,14 +167,14 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "NotesEntities.RegisterUserRequest",
+        "Type": "NotesEntities.Authorization.RegisterUserRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "NotesAPI.Controllers.UserController",
+    "ContainingType": "NotesAPI.Controllers.UsersController",
     "Method": "GetUser",
     "RelativePath": "users",
     "HttpMethod": "GET",

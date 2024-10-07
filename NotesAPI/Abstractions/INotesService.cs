@@ -1,4 +1,5 @@
 ﻿using NotesEntities;
+using NotesEntities.Operations;
 
 namespace NotesAPI.Services
 {
@@ -6,11 +7,11 @@ namespace NotesAPI.Services
     {
         Task<IQueryable<Note>> GetNotes();
         Task<IQueryable<NoteList>> GetLists();
-        Task<Note> GetNoteById(Guid id);
         Task<ListContent> CheckListItem(CheckListRequest request);
-        Task<Note> CreateNote(CreateNote note);
-        Task<NoteList> CreateList(CreateList list);
+        Task<Note> CreateNote(CreateNoteRequest note);
+        Task<NoteList> CreateList(CreateListRequest list);
         Task<Note> UpdateNote(Note note);
+        Task<NoteList> UpdateList(NoteList list);
         Task<Note> DeleteNote(Guid id);
         Task<NoteList> DeleteList(Guid id);
     }

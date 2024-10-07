@@ -14,3 +14,5 @@ C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\refint\Note
 C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.pdb
 C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\ref\NoteDataAccess.dll
 C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.sourcelink.json
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\bin\Debug\net8.0\NoteDataAccess.runtimeconfig.json
+C:\Users\jenje\source\repos\NotesAPI\NoteDataAccess\obj\Debug\net8.0\NoteDataAccess.genruntimeconfig.cache
